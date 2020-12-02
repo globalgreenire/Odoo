@@ -36,5 +36,5 @@ class StockRule(models.Model):
             location_id, name, origin, company_id, values, bom)
         order = self.env['sale.order'].search([('name', '=', origin)],
                                                  limit=1)
-        vals['gg_origin_customer'] = order and order.partner_id.name or ''
+        vals['gg_origin_customer'] = order and order.partner_id.display_name or ''
         return vals
