@@ -1,1 +1,2 @@
-# Odoo
+Globalgreenire Odoo modules
+==========================
